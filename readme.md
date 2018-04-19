@@ -67,11 +67,11 @@ All other props (eg `className`) are forwarded to the created element.
 When you need access to the raw nanotranslate instance from the react context, use this. Example:
 
 ```js
-const {TranslateRaw} = requrie('react-nanotranslate')
+const {TranslateRaw} = require('react-nanotranslate')
 function MyComponent () {
   return <TranslateRaw>
     {(translate) => {
-    return <SomethingFun>{translate('HELLO', {name: 'Bob'})}</SomethingFun>
+      return <SomethingFun>{translate('HELLO', {name: 'Bob'})}</SomethingFun>
     }}
   </TranslateRaw>
 }
